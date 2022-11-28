@@ -8,18 +8,16 @@ class TestCSVPrinter(unittest.TestCase):
   def test_read1(self):
     printer = CSVPrinter('./tests/sample.csv')
     line = printer.read()
-    print(line)
     self.assertEqual(2,len(line))
 
   def test_read2(self):
     printer = CSVPrinter('./tests/sample.csv')
     line = printer.read()
-    print(line)
     self.assertEqual("aaa1",len[0][0])
 
   def test_read3(self):
     try:
-      printer = CSVPrinter('./tests/sample.csv')
+      printer = CSVPrinter('./tests/Sample.csv')
       printer.read()
       unittest.TestCase.fail("This line should not be invoked")
     except Exception as e:
