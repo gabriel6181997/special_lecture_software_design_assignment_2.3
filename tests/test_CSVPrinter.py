@@ -1,6 +1,8 @@
 import unittest
+import sys
 from speciallecture.CSVPrinter import CSVPrinter
 
+sys.path.append("../speciallecture")
 class TestCSVPrinter(unittest.TestCase):
   def test_read(self):
     printer = 'sample.csv'
