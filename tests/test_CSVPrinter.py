@@ -2,7 +2,7 @@ import unittest
 import sys
 from speciallecture.CSVPrinter import CSVPrinter
 
-sys.path.append("../speciallecture")
+# sys.path.append("../speciallecture")
 class TestCSVPrinter(unittest.TestCase):
 
   def test_read1(self):
